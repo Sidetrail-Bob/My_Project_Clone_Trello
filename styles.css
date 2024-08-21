@@ -30,18 +30,17 @@ body {
 main {
   display: flex;
   flex-direction: row;
-  flex-wrap:nowrap
-  
-  /*grid-template-columns: auto */
-
+  flex-wrap: nowrap;
   justify-content: flex-start;
   padding: 10px;
+  overflow-x: auto;
+  min-height: 80;
 }
 section {
   padding: 20px;
+  margin: 3px;
   display: flex;
-  flex-basis: 0 0 300px;
+  justify-content: center;
+  min-width: 300px;
   background-color: rgb(219, 218, 218);
-
-  
 }
