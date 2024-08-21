@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(234, 156, 127);
+  background-color: rgb(241, 177, 154);
 }
 
 .navbar1 {
@@ -34,13 +34,31 @@ main {
   justify-content: flex-start;
   padding: 10px;
   overflow-x: auto;
-  min-height: 80;
+  min-height: 80vh;
 }
 section {
-  padding: 20px;
+  padding-left: 5px;
   margin: 3px;
-  display: flex;
-  justify-content: center;
-  min-width: 300px;
-  background-color: rgb(219, 218, 218);
+  display: flexbox;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 370px;
+  background-color: rgb(233, 230, 230);
+}
+
+h2 {
+  text-align: left;
+}
+
+.card {
+  display: inline-flexbox;
+  background-color: white;
+  height: auto;
+  width: 95%;
+  overflow: hidden;
+  badding-left: 5px;
+}
+
+.cardBottom {
+  justify: space-between;
 }
