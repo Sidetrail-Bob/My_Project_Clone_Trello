@@ -1,6 +1,5 @@
 body {
   background-color: rgb(241, 177, 154);
-  overflow: hidden;
 }
 
 .wrapper {
@@ -20,13 +19,26 @@ body {
 }
 .navbar1Left {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.navbar1Left img {
+  max-height: 40px;
+  padding: 2px;
+  border-radius: 5;
 }
 .navbar1LeftSearch {
   background-color: #f0f0f0e2;
   border: none;
 }
-
+.navbar1Right {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar1Right img {
+  max-height: 40px;
+  padding: 2px 4px;
+  border-radius: 5;
+}
 .navbar1 ul {
   list-style: none;
   margin: 0;
@@ -35,15 +47,22 @@ body {
 }
 
 .navbar2 {
+  display: flex;
   height: 50px;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.navbar2Left img {
+  max-height: 30px;
+  padding: 2px;
+  border-radius: 5;
 }
 
-.navbar2 ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: inline-flex;
+.navbar2Right img {
+  max-height: 30px;
+  padding: 2px 4px;
+  border-radius: 5;
 }
 
 main {
@@ -69,9 +88,6 @@ section {
   overflow-x: hidden;
 }
 
-.section-content {
-}
-
 .cardSectionHeader {
   display: flex;
   justify-content: space-between;
@@ -85,13 +101,14 @@ h2 {
   background-color: white;
   height: auto;
   width: 95%;
-  padding-left: 5px;
+  padding-left: 3px;
   margin: 5px;
   border-radius: 12px;
+  flex-shrink: 2;
 }
 
 .Top {
-  padding-top: 8px;
+  padding-top: 2px;
 }
 .Top img {
   border-radius: 5px;
